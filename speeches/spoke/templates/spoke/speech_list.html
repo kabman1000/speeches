@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Speech List</h1>
+  {% if speech_list %}
+  <ul>
+    {% for c in speech_list %}
+      <li>
+         {{c.speeech}}
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no speeches in the list.</p>
+  {% endif %} 
+{% endblock %}
